@@ -1,0 +1,55 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "fc305640",
+   "metadata": {},
+   "source": [
+    "# 01 - Potencial Inflacionario con Correcciones Cuánticas\n",
+    "Este notebook simula el potencial inflacionario con términos $\\phi^2$, $\\phi^4$, y $\\phi^6$ en un modelo de taquiones oscuros."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ca513c3c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "\n",
+    "import numpy as np\n",
+    "import matplotlib.pyplot as plt\n",
+    "\n",
+    "# Definición del potencial inflacionario con correcciones\n",
+    "def V(phi, V0=1.0, lamb=0.95, alpha=1e-3, beta=8e-5, delta=5e-7):\n",
+    "    return V0 * np.exp(-lamb * phi) * (1 + alpha * phi**2 + beta * phi**4 + delta * phi**6)\n",
+    "\n",
+    "# Valores del campo escalar\n",
+    "phi_values = np.linspace(0, 10, 1000)\n",
+    "V_values = V(phi_values)\n",
+    "\n",
+    "# Segunda derivada numérica para verificar estabilidad del vacío\n",
+    "d2V = np.gradient(np.gradient(V_values, phi_values), phi_values)\n",
+    "\n",
+    "# Verificación de estabilidad\n",
+    "assert all(d2V[1:] > 0), \"¡Inestabilidad de vacío detectada!\"\n",
+    "print(\"✅ Potencial estable bajo correcciones cuánticas.\")\n",
+    "\n",
+    "# Gráfico del potencial\n",
+    "plt.figure(figsize=(10, 6))\n",
+    "plt.plot(phi_values, V_values, label='Potencial $V(\\phi)$')\n",
+    "plt.xlabel('$\\phi$')\n",
+    "plt.ylabel('$V(\\phi)$')\n",
+    "plt.title('Potencial Inflacionario con $\\phi^2$, $\\phi^4$, $\\phi^6$')\n",
+    "plt.grid(True)\n",
+    "plt.legend()\n",
+    "plt.savefig(\"figures/potencial_phi6.svg\")  # Guarda en carpeta figures\n",
+    "plt.show()\n"
+   ]
+  }
+ ],
+ "metadata": {},
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
+
