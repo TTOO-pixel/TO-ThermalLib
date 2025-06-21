@@ -1,0 +1,7 @@
+Bender, C. M., & Boettcher, S. (1998). Real Spectra in Non-Hermitian Hamiltonians Having PT Symmetry. Physical Review Letters, 80(24), 5243–5246.
+Seiberg, N., & Witten, E. (1999). String Theory and Noncommutative Geometry. Journal of High Energy Physics, 1999(09), 032.
+Mostafazadeh, A. (2002). Pseudo-Hermiticity versus PT Symmetry: The necessary condition for the reality of the spectrum of a non-Hermitian Hamiltonian. Journal of Mathematical Physics, 43(1), 205–214.
+Breuer, H. P., & Petruccione, F. (2002). The Theory of Open Quantum Systems. Oxford University Press.
+Nielsen, M. A., & Chuang, I. L. (2010). Quantum Computation and Quantum Information (10th Anniversary ed.). Cambridge University Press.
+Wheeler, J. A. (1964). Geometrodynamics and the Issue of the Final State. In Relativity, Groups and Topology (pp. 317–520). Gordon and Breach.
+Hawking, S. W. (1978). Space-time foam. Nuclear Physics B, 144(2–3), 349–362.
