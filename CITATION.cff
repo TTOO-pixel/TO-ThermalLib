@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+title: "TO-ThermalLib: Taquiones Oscuros y Teleportación Cuántica"
+authors:
+  - name: María Amparo García Ondoño
+version: 1.0.0
+date-released: 2025-06-21
+license: MIT
+abstract: "Modelo de taquiones oscuros aplicado a computación cuántica distribuida, teleportación sin canal físico, y simulación de gravedad cuántica en laboratorio."
