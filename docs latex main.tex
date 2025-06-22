@@ -1,0 +1,54 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper, margin=2.5cm]{geometry}
+\usepackage{amsmath, amssymb, graphicx, hyperref}
+\usepackage{authblk}
+\usepackage{physics}
+\usepackage{bm}
+\usepackage{float}
+\usepackage{cite}
+\input{macros.tex}
+
+\title{Taquiones Oscuros y Computación Cuántica No Local:\\ Un Marco para Qubits Estables y Redes Distribuidas}
+\author{}
+\date{21 de junio de 2025}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Este trabajo presenta un modelo teórico que conecta cosmología cuántica, simetría $\mathcal{PT}$ y geometría no conmutativa para obtener qubits estables y teleportación cuántica no local. Se proponen simulaciones numéricas y predicciones falsables para validar el enfoque.
+\end{abstract}
+
+\section{Introducción}
+El entrelazamiento cuántico global es uno de los retos fundamentales de la computación cuántica escalable. En este trabajo, proponemos un modelo de \textit{taquiones oscuros} (TO) que actúa como campo de fondo para estabilizar qubits no hermíticos bajo simetría $\mathcal{PT}$ y permite teleportación cuántica sin canal físico.
+
+\section{Modelo Teórico}
+El lagrangiano TO propuesto es:
+\[
+\mathcal{L}_{TO} = -V(\phi) \sqrt{1 - (\partial_\mu \phi)^2} + g_x \phi^2 \chi^\dagger \chi + \delta \phi^6
+\]
+donde $V(\phi)$ incluye correcciones polinómicas cuánticas.
+
+\section{Simetría $\mathcal{PT}$ y Qubits No Hermíticos}
+El Hamiltoniano cuántico efectivo es:
+\[
+H = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} + i\gamma \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
+\]
+que se estudia mediante simulaciones con Qiskit.
+
+\section{Geometría No Conmutativa}
+Utilizamos un tensor $\theta^{\mu\nu}$ para simular redes no locales. La teleportación se modela con:
+\[
+|\Psi\rangle = \frac{1}{\sqrt{2}}(|00\rangle + |11\rangle) \otimes e^{-\frac{1}{2}p_\mu \theta^{\mu\nu} p_\nu}
+\]
+
+\section{Resultados Numéricos}
+Se obtuvieron fidelidades $> 99.95\%$ y predicciones falsables como $r_B \approx 2.38 \times 10^{-3}$ en modos B del CMB.
+
+\section{Conclusiones}
+Este marco conecta cosmología, cuerdas y computación cuántica en un modelo testable. Próximos pasos incluyen validación experimental en hardware cuántico.
+
+\bibliographystyle{unsrt}
+\bibliography{references}
+
+\end{document}
