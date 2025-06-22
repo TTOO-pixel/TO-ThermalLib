@@ -1,8 +1,9 @@
 cff-version: 1.2.0
-title: "TO-ThermalLib: Taquiones Oscuros y Teleportación Cuántica"
+title: "TO-ThermalLib: Taquiones Oscuros y Computación Cuántica No Local"
 authors:
   - name: María Amparo García Ondoño
-version: 1.0.0
+version: 1.3.0
 date-released: 2025-06-21
 license: MIT
-abstract: "Modelo de taquiones oscuros aplicado a computación cuántica distribuida, teleportación sin canal físico, y simulación de gravedad cuántica en laboratorio."
+abstract: "Este repositorio acompaña un marco teórico que combina campos de taquiones oscuros, simetría PT, geometría no conmutativa y computación cuántica para explorar qubits estables y redes cuánticas distribuidas. Incluye simulaciones numéricas, predicciones falsables y herramientas reproducibles."
+repository-code: "https://github.com/TTOO-pixel/TO-ThermalLib"
