@@ -1,0 +1,3 @@
+﻿% Archivo macros.tex
+% Aquí puedes definir comandos personalizados si lo necesitas
+
